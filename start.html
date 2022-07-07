@@ -52,11 +52,11 @@
 	<div>
 		<label for="form-cc">Numero Carta</label>
 		<abbr title="richiesto">*</abbr>
-		<input id="form-cc" name="cc" type="text" required/>
+		<input id="form-cc" name="cc" type="number" pattern="{16}" min="13" max="16" title="Minimo 16 caratteri" autofocus required/>
 		<label for="form-cvc">CVC</label>
 		<abbr title="richiesto">*</abbr>
-		<input id="form-cvc" name="cvc" type="text" required/>
-		<label for="form-exp">Scadenza</label>
+		<input id="form-cvc" name="cvc" type="number" pattern="{3}" min="3" max="3" title="Minimo 3 caratteri" autofocus required/>
+		<label for="form-cvc">Data di Scadenza</label>
 		<abbr title="richiesto">*</abbr>
 		<input id="form-exp" name="exp" type="date" required/>
 		<label for="form-address">Indirizzo di fatturazione</label>
