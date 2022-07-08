@@ -11,15 +11,15 @@
 
 <body>
     <picture>
-        
-        <img src="assets/img1.webp" alt="Immagine 1" srcset="assets/business-man.jpg"/>
-        
+        <source media="(max-width:300px)" srcset="assets/business-man.webp"> 
+        <source media="(min-width:300px)" srcset="assets/business-man.jpg"> 
+        <img src="assets/business-man.jpg" alt="Immagine 1"/>
     </picture>
-
     <picture>
-        <img src="assets/img2.webp" alt="Immagine 2" srcset="assets/ok-hand.jpg">
+        <source media="(max-width:300px)" srcset="assets/ok-hand.webp">
+        <source media="(min-width:300px)" srcset="assets/ok-hand.jpg">
+        <img src="assets/ok-hand.jpg" alt="Immagine 2"/>
     </picture>
-
 
 
 </body>
